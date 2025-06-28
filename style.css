@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.235);
+    color: white;
+    /* border: 2px solid rgb(255, 255, 255); */
+
+}
+.links{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.links ul {
+    /* border: 2px solid white; */
+    
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: white;
+
+}
+.links ul li{
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    /* border: 2px solid white; */
+    
+}
+.links ul li:hover{
+    transform: scale(1.2);
+    background-color: rgb(114, 114, 255);
+
+}
+
+.Branding {
+    /* border: 2px solid orange; */
+    margin-left: 30px;
+}
+
+
+
+.footer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 42px;
+    margin: 20px auto;
+    padding: 0 20px;
+    justify-content: center;
+    align-content: center;
+    /* border: 2px solid black; */
+}
+
+.cards {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.587);
+    justify-self: center;
+    gap: 0px;
+    transition: all 0.4s ease-in-out;
+}
+.cards:hover{
+    transform:scale(1.07);
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+
+}
+
+.cards .image img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+
+}
+
+.des {
+    /* border: 2px solid black; */
+    color: white;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards a {
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background-color: rgb(114, 114, 255);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width: 866px) {
+    .card-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 747px) {
+    .card-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .links ul {
+    /* border: 2px solid white; */
+    gap: 10px;
+}
+}
+
+@media screen and (max-width: 483px) {
+    .card-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.235);
+        color: white;
+        text-align: center;
+
+
+    }
+    .links ul li{
+    
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    /* border: 2px solid white; */
+    }
+}
+
+@media screen and (max-width: 411px){
+    .links{
+     /* border: 2px solid green; */
+     display: flex;
+     justify-content: center;
+     margin-left: 50%;
+     transform: translateX(-50%);
+     
+ }
+    .links ul {
+        
+        
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        gap: 18px;
+        /* border: 2px solid white; */
+        
+    
+    }
+     .links ul li{
+        padding: 2px 5px;
+     }
+    
+
+  .Branding {
+    /* border: 2px solid orange; */
+    margin-left: 10px;
+}
+}

@@ -74,7 +74,7 @@ nav {
 
 .links ul li:hover {
     transform: scale(1.2);
-    background-color: #ad36f2;
+    background-color: #f04e18;
 
 }
 
@@ -157,7 +157,7 @@ nav {
 .cards a {
     /* border: 2px solid black; */
     border-radius: 5px;
-    background-color: #ad36f2;
+    background-color: #f04e18;
     padding: 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -168,7 +168,7 @@ nav {
 }
 
 .cards a:hover {
-    background-color: #ad36f280;
+    background-color: #f04e18a7;
 }
 
 .background-video {
